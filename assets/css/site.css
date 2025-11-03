@@ -154,7 +154,7 @@ a:hover {
 }
 
 .split {
-  background: linear-gradient(90deg, #fff 0 50%, #fafafa 50%)
+  background: linear-gradient(90deg, #fff 0 50%, #fff 50%)
 }
 
 /* Fix: readable text on white cards inside the gradient section */
@@ -190,6 +190,21 @@ a:hover {
   border-radius: 14px;
   padding: 24px;
 }
+
+#memberships {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-radius: 0;
+  padding: 0;
+}
+
+#memberships:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.1);
+}
+
 
 .panel.dark {
   background: #111;
