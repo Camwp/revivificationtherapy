@@ -310,6 +310,11 @@
                 <!-- Replace FORM_ACTION_URL with your provider endpoint -->
                 <form class="form" id="leadForm" name="trt-consult" method="POST" data-netlify="true"
                     netlify-honeypot="bot-field" action="/thanks.html">
+                    <input type="hidden" name="form-name" value="trt-consult" />
+                    <p style="display:none;">
+                        <label>Don’t fill this out: <input name="bot-field" /></label>
+                    </p>
+
                     <div class="row">
                         <div>
                             <label for="firstName">First name</label>
@@ -342,7 +347,6 @@
                     <input type="hidden" name="utm_term" id="utm_term" />
                     <input type="hidden" name="utm_content" id="utm_content" />
 
-                    <!-- Consent -->
                     <label style="margin-top:12px;">
                         <input type="checkbox" required />
                         I agree to be contacted by phone/email to schedule my consultation.
@@ -358,6 +362,7 @@
                         In an emergency, call 911.
                     </div>
                 </form>
+
 
 
 
