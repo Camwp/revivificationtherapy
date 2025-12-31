@@ -308,7 +308,8 @@
 
                 <!-- OPTION A (static site): Formspree/Netlify endpoint -->
                 <!-- Replace FORM_ACTION_URL with your provider endpoint -->
-                <form class="form" id="leadForm" method="POST" action="/thanks.html">
+                <form class="form" id="leadForm" name="trt-consult" method="POST" data-netlify="true"
+                    netlify-honeypot="bot-field" action="/thanks.html">
                     <div class="row">
                         <div>
                             <label for="firstName">First name</label>
