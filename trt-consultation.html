@@ -132,6 +132,43 @@
             transform: translateY(-1px)
         }
 
+        .btn {
+            transition:
+                background 0.2s ease,
+                box-shadow 0.2s ease,
+                border-color 0.2s ease,
+                transform 0.15s ease;
+        }
+
+        /* Hover */
+        .btn.primary:hover {
+            background: linear-gradient(135deg,
+                    rgba(124, 255, 178, 0.35),
+                    rgba(124, 255, 178, 0.15));
+            border-color: rgba(124, 255, 178, 0.7);
+            box-shadow:
+                0 0 0 1px rgba(124, 255, 178, 0.25),
+                0 8px 24px rgba(124, 255, 178, 0.25);
+            transform: translateY(-2px);
+            cursor: pointer;
+        }
+
+        /* Active (mouse down) */
+        .btn.primary:active {
+            transform: translateY(0);
+            box-shadow:
+                0 0 0 1px rgba(124, 255, 178, 0.35),
+                0 4px 12px rgba(124, 255, 178, 0.2);
+        }
+
+        /* Keyboard focus */
+        .btn.primary:focus-visible {
+            outline: none;
+            box-shadow:
+                0 0 0 3px rgba(124, 255, 178, 0.45),
+                0 10px 30px rgba(124, 255, 178, 0.3);
+        }
+
         .grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
