@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Free TRT Consultation | Primal Shift Performance</title>
+    <meta name="description"
+        content="Schedule a free consultation to discuss symptoms, labs, and individualized TRT treatment with ongoing monitoring." />
+    <style>
+        :root {
+            --bg: #070A12;
+            --card: rgba(255, 255, 255, .06);
+            --line: rgba(255, 255, 255, .12);
+            --text: #EAF0FF;
+            --muted: rgba(234, 240, 255, .75);
+            --accent: #7CFFB2;
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            margin: 0;
+            font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+            background: radial-gradient(1200px 600px at 20% -10%, rgba(124, 255, 178, .18), transparent 55%), var(--bg);
+            color: var(--text)
+        }
+
+        a {
+            color: inherit
+        }
+
+        .wrap {
+            max-width: 1040px;
+            margin: 0 auto;
+            padding: 28px 18px 56px
+        }
+
+        .topbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            margin-bottom: 22px
+        }
+
+        .brand {
+            font-weight: 800;
+            letter-spacing: .08em;
+            text-transform: uppercase;
+            font-size: 13px;
+            opacity: .9
+        }
+
+        .call {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 14px;
+            border: 1px solid var(--line);
+            border-radius: 999px;
+            background: rgba(255, 255, 255, .03);
+            text-decoration: none
+        }
+
+        .hero {
+            display: grid;
+            grid-template-columns: 1.2fr .8fr;
+            gap: 18px;
+            align-items: stretch
+        }
+
+        @media (max-width:900px) {
+            .hero {
+                grid-template-columns: 1fr
+            }
+        }
+
+        .panel {
+            border: 1px solid var(--line);
+            background: var(--card);
+            border-radius: 18px;
+            padding: 20px
+        }
+
+        h1 {
+            font-size: 42px;
+            line-height: 1.08;
+            margin: 0 0 10px
+        }
+
+        @media (max-width:520px) {
+            h1 {
+                font-size: 34px
+            }
+        }
+
+        .sub {
+            color: var(--muted);
+            font-size: 16px;
+            line-height: 1.5;
+            margin: 0 0 16px
+        }
+
+        .ctaRow {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 14px
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            border-radius: 12px;
+            padding: 12px 14px;
+            border: 1px solid var(--line);
+            text-decoration: none;
+            font-weight: 700
+        }
+
+        .btn.primary {
+            background: linear-gradient(135deg, rgba(124, 255, 178, .22), rgba(124, 255, 178, .08));
+            border-color: rgba(124, 255, 178, .35)
+        }
+
+        .btn:hover {
+            transform: translateY(-1px)
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+            margin-top: 14px
+        }
+
+        @media (max-width:900px) {
+            .grid {
+                grid-template-columns: 1fr
+            }
+        }
+
+        .item {
+            border: 1px solid var(--line);
+            background: rgba(0, 0, 0, .18);
+            border-radius: 14px;
+            padding: 14px
+        }
+
+        .item b {
+            display: block;
+            margin-bottom: 6px
+        }
+
+        .item p {
+            margin: 0;
+            color: var(--muted);
+            line-height: 1.5
+        }
+
+        .section {
+            margin-top: 16px
+        }
+
+        .kicker {
+            font-size: 12px;
+            letter-spacing: .14em;
+            text-transform: uppercase;
+            color: rgba(234, 240, 255, .72)
+        }
+
+        .h2 {
+            font-size: 22px;
+            margin: 8px 0 10px
+        }
+
+        ul {
+            margin: 10px 0 0 18px;
+            color: var(--muted);
+            line-height: 1.6
+        }
+
+        .form label {
+            display: block;
+            font-size: 13px;
+            color: rgba(234, 240, 255, .85);
+            margin: 10px 0 6px
+        }
+
+        .form input,
+        .form textarea,
+        .form select {
+            width: 100%;
+            padding: 12px 12px;
+            border-radius: 12px;
+            border: 1px solid var(--line);
+            background: rgba(0, 0, 0, .25);
+            color: var(--text);
+            outline: none
+        }
+
+        .form textarea {
+            min-height: 96px;
+            resize: vertical
+        }
+
+        .row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px
+        }
+
+        @media (max-width:720px) {
+            .row {
+                grid-template-columns: 1fr
+            }
+        }
+
+        .fine {
+            font-size: 12px;
+            color: rgba(234, 240, 255, .62);
+            line-height: 1.5;
+            margin-top: 10px
+        }
+
+        .divider {
+            height: 1px;
+            background: rgba(255, 255, 255, .10);
+            margin: 16px 0
+        }
+
+        .badge {
+            display: inline-flex;
+            gap: 8px;
+            align-items: center;
+            border: 1px solid rgba(124, 255, 178, .35);
+            background: rgba(124, 255, 178, .10);
+            padding: 6px 10px;
+            border-radius: 999px;
+            font-size: 12px;
+            color: rgba(234, 240, 255, .9)
+        }
+    </style>
+
+    <!-- OPTIONAL: Google Tag Manager / Google Ads tag goes here -->
+    <!-- Paste GTM snippet or gtag() config provided by your ads manager -->
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="topbar">
+            <div class="brand">Primal Shift Performance</div>
+        </div>
+
+        <div class="hero">
+            <div class="panel">
+                <div class="badge">Free Consultation • Sacramento, CA</div>
+                <h1>Low energy, low drive, stubborn fat?</h1>
+                <p class="sub">
+                    Schedule a free consultation to discuss symptoms, labs, and an individualized TRT plan with ongoing
+                    monitoring.
+                </p>
+
+
+
+                <div class="section">
+                    <div class="kicker">Common signs</div>
+                    <div class="h2">You might relate if you’ve noticed:</div>
+                    <ul>
+                        <li>Decreased energy or motivation</li>
+                        <li>Lower sex drive</li>
+                        <li>Less strength/endurance or muscle mass</li>
+                        <li>More body fat than before</li>
+                        <li>Mood changes (irritability, feeling “off”)</li>
+                    </ul>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="kicker">How it works</div>
+                <div class="grid">
+                    <div class="item">
+                        <b>1) Free consultation</b>
+                        <p>We talk symptoms, goals, and medical history basics.</p>
+                    </div>
+                    <div class="item">
+                        <b>2) Labs</b>
+                        <p>Bloodwork is required to start treatment (in-office labs available by appointment).</p>
+                    </div>
+                    <div class="item">
+                        <b>3) Individualized plan</b>
+                        <p>Evaluation + treatment plan with ongoing monitoring and follow-ups.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="panel">
+                <div class="kicker">Book your spot</div>
+                <div class="h2">Request a call back</div>
+                <p class="sub" style="margin-top:0">
+                    Leave your details and we’ll reach out to schedule. (Please avoid sensitive medical details.)
+                </p>
+
+                <!-- OPTION A (static site): Formspree/Netlify endpoint -->
+                <!-- Replace FORM_ACTION_URL with your provider endpoint -->
+                <form class="form" id="leadForm" method="POST" action="FORM_ACTION_URL">
+                    <div class="row">
+                        <div>
+                            <label for="firstName">First name</label>
+                            <input id="firstName" name="firstName" autocomplete="given-name" required />
+                        </div>
+                        <div>
+                            <label for="lastName">Last name</label>
+                            <input id="lastName" name="lastName" autocomplete="family-name" required />
+                        </div>
+                    </div>
+
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" autocomplete="email" required />
+
+                    <label for="phone">Phone</label>
+                    <input id="phone" name="phone" type="tel" autocomplete="tel" required />
+
+                    <label for="bestTime">Best time to reach you</label>
+                    <select id="bestTime" name="bestTime">
+                        <option value="">No preference</option>
+                        <option>Morning</option>
+                        <option>Afternoon</option>
+                        <option>Evening</option>
+                    </select>
+
+                    <!-- Hidden UTM fields for ad attribution -->
+                    <input type="hidden" name="utm_source" id="utm_source" />
+                    <input type="hidden" name="utm_medium" id="utm_medium" />
+                    <input type="hidden" name="utm_campaign" id="utm_campaign" />
+                    <input type="hidden" name="utm_term" id="utm_term" />
+                    <input type="hidden" name="utm_content" id="utm_content" />
+
+                    <!-- Consent -->
+                    <label style="margin-top:12px;">
+                        <input type="checkbox" required />
+                        I agree to be contacted by phone/email to schedule my consultation.
+                    </label>
+
+                    <button class="btn primary" type="submit" style="width:100%;margin-top:12px">
+                        Submit Request
+                    </button>
+
+                    <div class="fine">
+                        Medical outcomes vary. This page is for informational purposes and does not provide medical
+                        advice.
+                        In an emergency, call 911.
+                    </div>
+                </form>
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Capture UTM params into hidden fields
+        const params = new URLSearchParams(location.search);
+        const keys = ["utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content"];
+        keys.forEach(k => {
+            const el = document.getElementById(k);
+            if (el) el.value = params.get(k) || "";
+        });
+
+        // OPTIONAL: redirect to thanks page after submit (if your form provider supports it)
+        // For Formspree: add <input type="hidden" name="_redirect" value="https://primalshiftperformance.com/thanks.html">
+    </script>
+</body>
+
+</html>
